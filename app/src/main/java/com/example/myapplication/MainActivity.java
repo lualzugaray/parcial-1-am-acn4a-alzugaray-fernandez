@@ -51,4 +51,6 @@ public class MainActivity extends Activity {
         linearLayout.addView(textView);
         elementCount++;
     }
+
+    
 }
