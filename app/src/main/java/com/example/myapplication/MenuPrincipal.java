@@ -29,7 +29,7 @@ public class MenuPrincipal extends Activity implements SearchView.OnQueryTextLis
         carroCompras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Mostrar un mensaje en un Toast
+
                 Toast.makeText(getApplicationContext(), "Carro de compras vacío", Toast.LENGTH_SHORT).show();
             }
         });
