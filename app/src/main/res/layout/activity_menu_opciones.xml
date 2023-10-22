@@ -58,6 +58,9 @@
             android:layout_marginTop="10dp">
 
             <!-- Botón 1 en la fila 1 -->
+
+            <!-- Botón 2 en la fila 1 -->
+
             <Button
                 android:id="@+id/btn_postres"
                 android:layout_width="0dp"
@@ -65,12 +68,13 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button"
+                android:drawableBottom="@drawable/postre"
                 android:onClick="searchPostresClick"
                 android:text="@string/boton_postres"
+                android:drawablePadding="0dp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
-            <!-- Botón 2 en la fila 1 -->
             <Button
                 android:id="@+id/btn_pizzas"
                 android:layout_width="0dp"
