@@ -68,7 +68,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button"
-                android:drawableBottom="@drawable/postre"
+
                 android:onClick="searchPostresClick"
                 android:text="@string/boton_postres"
                 android:drawablePadding="0dp"

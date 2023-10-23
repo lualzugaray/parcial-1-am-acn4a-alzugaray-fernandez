@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Delivery Ya</string>
 
+    <string name="texto_landing">Descubre restaurantes cerca tuyo</string>
+    <string name="boton_continuar">Continuar</string>
 
     <string name="buscador">¿Qué estás buscando?</string>
     <string name="titulo_menu">Ordene su comida aqui</string>
@@ -10,4 +12,8 @@
     <string name="boton_parrillas">Parrillas</string>
     <string name="boton_helados">Helados</string>
     <string name="boton_panaderia">Panaderia</string>
+
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Tablero</string>
+    <string name="title_notifications">Notificaciones</string>
 </resources>

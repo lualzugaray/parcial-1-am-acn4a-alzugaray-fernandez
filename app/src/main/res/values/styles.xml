@@ -4,6 +4,7 @@
         <!-- Define el color de texto primario (colorPrimary) -->
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:textColorPrimary">@color/white</item>
+
         <!-- Otros estilos personalizados -->
     </style>
 </resources>
