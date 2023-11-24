@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="409dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_burgermenu"
+            android:layout_width="25dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:src="@drawable/burger_menu" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/img_cart"
+            android:layout_width="25dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:src="@drawable/cart" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Imagen del producto -->
+        <ImageView
+            android:id="@+id/imageProducto"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/dulate_postres" />
+
+        <LinearLayout
+            android:id="@+id/layout_productos"
+            android:layout_width="168dp"
+            android:layout_height="83dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Nombre del producto -->
+            <TextView
+                android:id="@+id/textNombreProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Producto" />
+
+            <!-- Precio del producto -->
+            <TextView
+                android:id="@+id/textPrecioProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio: $0.00" />
+
+            <!-- Cantidad del producto -->
+            <LinearLayout
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRestar"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:text="-"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textCantidad"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:gravity="center"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/btnSumar"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:text="+"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Información del producto (nombre, precio, cantidad) -->
+    </LinearLayout>
+
+    <!-- Aquí puedes agregar más elementos como el botón de "Finalizar compra" y el TextView del total -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
